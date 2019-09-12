@@ -1,0 +1,27 @@
+
+<!--
+<p>componente-generado works!</p>
+<br>
+<ul>
+    <li *ngFor="let user of users"> {{user}} </li>
+</ul>
+-->
+<form [formGroup]="dataFG">
+    <div>
+        usuario
+        <input type="text" name="usuario" formControlName="usuario" value="xxx">
+    </div>
+    <div>
+        telefono
+        <input type="text" name="telefono" formControlName="telefono" >
+    </div>
+    <div>
+        <input type="submit" (click)="miClick()" value="miboton" >
+    </div>
+</form>
+<br>
+<p>{{users[1] | hexAndVowel }}</p>
+<br>
+<footer>
+    {{nombre | hexAndVowel}}
+</footer>
